@@ -40,8 +40,8 @@ a:hover {
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     line-height: 2em;
     padding-left: 30px;
 }
@@ -51,12 +51,22 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(51, 51, 51);
+    background-size: cover;
     color: white;
 }
 
+section#img-joaninha {
+  background: url(../imagens/background001.jpg)  no-repeat fixed;
+  background-size: cover;
+}
+
+section#img-livro {
+  background: url(../imagens/background002.jpg) no-repeat fixed;
+}
+
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.192);
+    background-color: rgba(0, 0, 0, 0.486);
     width: 300px;
 }
 
