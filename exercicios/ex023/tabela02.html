@@ -15,6 +15,13 @@
         border-collapse: collapse;
       }
 
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+      }
+
       td,
       th {
         border: solid 1px black;
@@ -25,7 +32,7 @@
         text-align: right;
       }
 
-      tr:nth-child(even) {
+      tbody > tr:nth-child(even) {
         background-color: rgb(161, 161, 161);
       }
 
@@ -40,10 +47,11 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+      <caption>População das Unidades Federativas</caption>
       <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 100px;">População</th>
         </tr>
       </thead>
       <tbody>
@@ -94,7 +102,7 @@
       </tbody>
       <tfoot>
         <tr>
-          <th>Total de Habitantes</th>
+          <th scope="row">Total de Habitantes</th>
           <td><strong>165 846 173</strong></td>
         </tr>
       </tfoot>
